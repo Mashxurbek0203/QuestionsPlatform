@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./img/logo_transparent.png" type="image/x-icon">
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <title>Ask Question</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <div class="mui--text-white mui--text-display1 mui--align-vertical">Question App <br> <small class="author">by Mashxurbek</small></div>
+    </div>
+    <div id="content" class="mui-container-fluid">
+      <div class="mui-row">
+        <div class="mui-col-sm-10 mui-col-sm-offset-1">
+          <br>
+          <br>
+          <div class="mui--text-black-54 mui--text-body2">ASK A QUESTION</div>
+          <div class="mui-divider"></div>
+          <br>
+          <form class="mui-form" id="question-form">
+            
+            <div class="mui-textfield mui-textfield--float-label">
+              <input type="text" id="question-input" required>
+              <label>Question</label>
+            </div>
+           
+            <button type="submit" class="mui-btn mui-btn--raised mui-btn--primary" id="question-btn" disabled>Send question</button>
+          </form>
+          <br>
+          <br>
+          <br>
+          <div class="mui--text-black-54 mui--text-body2">YOUR QUESTIONS</div>
+          <div class="mui-divider"></div>
+          <br>
+          <div id="list"></div>
+
+        </div>
+      </div>
+    </div>
+    <button class="mui-btn mui-btn--fab mui-btn--accent floating-btn" id="auth-btn">Все</button>
+    <script src="./JS/base.js"></script>
+    <script src="./JS/utils.js"></script>
+    <script src="./JS/auth.js"></script>
+    <script src="./JS/QuestionFetch.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
